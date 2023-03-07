@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games - Games</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div>
+        <h1>Games</h1>
+        <div class="search-form-outline">
+          <input
+            type="search"
+            id="search"
+            placeholder="Search for game"
+            aria-label="Search"
+          />
+        </div>
+      </div>
+      <ul id="games-list" class="text-center"></ul>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+    <script src="js/pages/games.js" type="module"></script>
+    <script src="js/pages/search.js" type="module"></script>
+  </body>
+</html>

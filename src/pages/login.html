@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games - Login</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div>
+        <h1>Login</h1>
+
+        <form id="login-form">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+    <script src="js/pages/login.js" type="module"></script>
+  </body>
+</html>

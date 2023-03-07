@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games - Admin panel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div>
+        <h1>Admin panel</h1>
+        <a href="game-form.html" class="btn btn-success mb-5 mt-3">Add new game</a>
+
+        <table id="admin-games" class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Featured</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+    <script src="js/pages/admin.js" type="module"></script>
+  </body>
+</html>

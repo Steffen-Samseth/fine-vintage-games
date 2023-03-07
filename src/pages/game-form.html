@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games - Admin Forms</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div>
+        <h1>New game</h1>
+        <div>
+          <form id="game-form">
+            <fieldset>
+              <div class="mb-3">
+                <label for="title" class="form-label form-title">Title</label>
+                <input
+                  type="text"
+                  id="title-form-input"
+                  class="form-control"
+                  aria-describedby="title"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="image-file" class="form-label form-image"
+                  >Image</label
+                >
+                <input
+                  type="file"
+                  id="image-file-form-input"
+                  class="form-control"
+                  aria-describedby="image"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="image-url" class="form-label form-image"
+                  >Image URL</label
+                >
+                <textarea
+                  type="url"
+                  id="image-url-form-input"
+                  class="form-control"
+                  aria-describedby="image"
+                ></textarea>
+                <div class="form-text">
+                  This can be used instead of uploading an image
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label form-description"
+                  >Description</label
+                >
+                <textarea
+                  type="text"
+                  id="description-form-input"
+                  class="form-control"
+                  aria-describedby="description"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="price" class="form-label form-price">Price</label>
+                <input
+                  type="number"
+                  id="price-form-input"
+                  class="form-control"
+                  aria-describedby="price"
+                  required
+                />
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="featured-form-input"
+                />
+                <label class="form-check-label" for="featured-form-input"
+                  >Featured</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Create game</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+
+    <script src="js/pages/game-form.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div id="hero-banner">
+      </div>
+      <h2>Featured games</h2>
+      <div class="text-center">
+        <div id="featured-row" class="row">
+        </div>
+      </div>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+    <script src="js/pages/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "fragments/head.j2.html" %}
+    <title>Fine Vintage Games - Cart</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "fragments/header.j2.html" %}
+      <div>
+        <h1>Cart</h1>
+
+        <div id="cart"></div>
+        <div id="sum"></div>
+      </div>
+      {% include "fragments/footer.j2.html" %}
+    </div>
+    <script src="js/pages/cart.js" type="module"></script>
+  </body>
+</html>
